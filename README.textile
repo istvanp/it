@@ -6,7 +6,7 @@ I18n is baked right into Rails, and it's great. But if you want to place markup 
   copy: "If you are already registered, %{login_link}!"
   copy_login_link: "please sign in"</code></pre>
 
-<pre><code><%=raw t("copy", login: link_to(t("copy_login_link"), login_path)) %></code></pre>
+<pre><code><%=raw t("copy", login_link: link_to(t("copy_login_link"), login_path)) %></code></pre>
 
 Wouldn't it be much nicer and easier to understand for your translator to have the whole copy in single label? *it* lets you do that:
 
